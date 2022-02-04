@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
-import { addTodo, removeTodo, deleteTodo } from "../actions";
-import "./Todo.css";
+import { addTodo, removeTodo, deleteTodo } from "../../actions";
+import "./View.css";
 
 const Todo = () => {
   const [inputData, setInputData] = useState("");
@@ -19,7 +19,7 @@ const Todo = () => {
           <div className="addItems">
             <input
               type="text"
-              placeholder="Add Items...."
+              placeholder="Add Task Here...."
               value={inputData}
               onChange={(event) => setInputData(event.target.value)}
             />
@@ -46,8 +46,10 @@ const Todo = () => {
             })}
           </div>
           <div className="showItems">
-            <button className="btn effect04" data-sm-link-text="removeAll"
-            onClick={() => dispatch(removeTodo())}
+            <button
+              className="btn effect04"
+              data-sm-link-text="removeAll"
+              onClick={() => dispatch(removeTodo())}
             >
               <span>Check List</span>
             </button>

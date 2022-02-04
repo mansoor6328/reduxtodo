@@ -13,10 +13,9 @@ html {
 
 .main-div {
   min-height: 100vh;
-  background: #060822;
+  background: lightblue;
   display: flex;
   justify-content: center;
-  /* align-items: center; */
 }
 
 .child-div {
@@ -30,7 +29,7 @@ html {
 }
 
 .child-div figure figcaption {
-  color: #fff;
+  color: black;
   font-size: 2.2rem;
   padding-top: 2rem;
   text-transform: capitalize;
